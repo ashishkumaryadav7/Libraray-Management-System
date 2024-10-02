@@ -869,11 +869,18 @@ class mainofproject1
 			}
 			else if(ob1.y==0)
 			{
-				System.out.println("Invalid user ID or Password");
+				
+				System.out.println("Invalid user ID or Password You have "+(5-n)+" Chance");
 				n++;
+				
 			}
 			
 		}
+		if(n>=6){
+			System.out.println("You are not Authorize User ! Sorry");
+
+			return;
+			}
 
 	// object for book entry...........................................
 		Bookentry ob2=new Bookentry();
